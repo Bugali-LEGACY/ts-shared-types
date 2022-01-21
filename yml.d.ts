@@ -53,12 +53,12 @@ interface CircleCollision extends BaseCollision {
   radius: number
 }
 
-type Collision = CircleCollision | RectangleCollision
+type YMLCollision = CircleCollision | RectangleCollision
 
 interface PageFile {
   version: string
   type: 'sequence'
-  collisionsList: Collision[]
+  collisionsList: YMLCollision[]
   actionablesList: (SimpleActionable|MultiActionable)[]
 }
 
